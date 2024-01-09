@@ -1,0 +1,14 @@
+#arr=[int(x) for x in input().split()]
+arr=list(map(int,input().split()))
+def sortArr(arr):
+  return sorted(arr)
+res_arr=sortArr(arr)
+a,b,c=res_arr[0],res_arr[1],res_arr[2]
+X=(a**2)+(b**2)
+if(a!=b and a!=c and b!=c):
+  if((a+b)>c ):
+    print("yes")
+  else:
+    print("no")
+else:
+  print("no")
