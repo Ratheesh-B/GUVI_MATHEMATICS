@@ -1,0 +1,12 @@
+n=input()
+#arr=[int(x) for x in input().split()]
+arr=list(map(int,input().split()))
+def arrSwap(arr):
+    i=0
+    while((i+1)<len(arr)):
+        temp=arr[i+1]
+        arr[i+1]=arr[i]
+        arr[i]=temp
+        i=i+2
+    return arr 
+print(*arrSwap(arr))
