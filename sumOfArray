@@ -1,0 +1,5 @@
+from functools import reduce
+arr = [int(x) for x in range(1, int(input())+1)]
+def sumOfArr(arr):
+  return reduce(lambda a,b:a+b,arr)
+print(sumOfArr(arr))
