@@ -1,0 +1,11 @@
+string=list(input())
+def stringSwap(a):
+  i=0
+  while((i+1)<len(a)):
+    temp=a[i+1]
+    a[i+1]=a[i]
+    a[i]=temp 
+    i=i+2
+  return a
+for i in stringSwap(string):
+  print(i,end="")
