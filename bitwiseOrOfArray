@@ -1,0 +1,6 @@
+from functools import reduce
+a=input()
+b=list(map(int,input().split()))
+def bitwiseOr(arr):
+  return reduce(lambda a,b:a|b,arr)
+print(bitwiseOr(b))
